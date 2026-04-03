@@ -85,10 +85,10 @@ Several new features were created to improve predictive performance:
    - $$\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}$$
 3. **Intensity consistency**:
    - Mean of `intensity_index_0`, `intensity_index_1`, and `intensity_index_2`.
-   - $$\text{intensity\_consistency} = \frac{\text{intensity\_index}_0 + \text{intensity\_index}_1 + \text{intensity\_index}_2}{3}$$
+   - $$IC = \frac{I_0 + I_1 + I_2}{3}$$
 4. **Overall energy features**:
    - `overall_energy_0`, `overall_energy_1`, `overall_energy_2` created as:
-   - $$\text{overall\_energy}_i = \frac{\text{intensity\_index}_i + \text{groove\_efficiency}_i + \text{rhythmic\_cohesion}_i}{3}, \quad i \in \{0,1,2\}$$
+   - $$OE_i = \frac{I_i + G_i + R_i}{3}, \quad i \in \{0,1,2\}$$
 
 ## Feature Selection
 
@@ -114,9 +114,9 @@ This reduced noise and improved model performance.
 The following metrics were used on the validation set:
 
 1. **Mean Absolute Error (MAE)**
-   - $$\text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
+   - $$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
 2. **Root Mean Squared Error (RMSE)**
-   - $$\text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}$$
+   - $$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}$$
 3. **R-squared Score ($R^2$)**
    - $$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
 
