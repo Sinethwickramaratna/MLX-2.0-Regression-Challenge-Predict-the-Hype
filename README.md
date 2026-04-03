@@ -85,10 +85,10 @@ Several new features were created to improve predictive performance:
    - $$\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}$$
 3. **Intensity consistency**:
    - Mean of `intensity_index_0`, `intensity_index_1`, and `intensity_index_2`.
-   - $$\text{intensity_consistency} = \frac{\text{intensity_index}_0 + \text{intensity_index}_1 + \text{intensity_index}_2}{3}$$
+   - $$\text{intensity\_consistency} = \frac{\text{intensity\_index}_0 + \text{intensity\_index}_1 + \text{intensity\_index}_2}{3}$$
 4. **Overall energy features**:
    - `overall_energy_0`, `overall_energy_1`, `overall_energy_2` created as:
-   - $$\text{overall_energy}_i = \frac{\text{intensity_index}_i + \text{groove_efficiency}_i + \text{rhythmic_cohesion}_i}{3}, \quad i \in \{0,1,2\}$$
+   - $$\text{overall\_energy}_i = \frac{\text{intensity\_index}_i + \text{groove\_efficiency}_i + \text{rhythmic\_cohesion}_i}{3}, \quad i \in \{0,1,2\}$$
 
 ## Feature Selection
 
