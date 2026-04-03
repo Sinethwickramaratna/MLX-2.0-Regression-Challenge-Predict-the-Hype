@@ -114,11 +114,22 @@ This reduced noise and improved model performance.
 The following metrics were used on the validation set:
 
 1. **Mean Absolute Error (MAE)**
-   - $$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
+
+$$
+MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|
+$$
+
 2. **Root Mean Squared Error (RMSE)**
-   - $$RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}$$
+
+$$
+RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}
+$$
+
 3. **R-squared Score (R2)**
-   - $$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
+
+$$
+R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}
+$$
 
 The competition ranking metric is **RMSE**.
 
